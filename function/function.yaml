@@ -24,5 +24,3 @@ spec:
           - env:
              - name: SENTENCE_TRANSFORMERS_HOME
                value: "./models"
-             - name: PYTHONPATH
-               value: "./dependencies"
