@@ -16,3 +16,6 @@ spec:
  checksum: sha256:362bdc654d3b1e4057a82b2dcc3828a91d7f5f62072948464740066fe799dd5b
  function-content-type: url+zip
  function: https://github.com/Ask-Waldo/ask-waldo-keyphrase-extraction-serverless/blob/master/zip/package.zip?raw=true
+ env:
+  - name: SENTENCE_TRANSFORMERS_HOME
+  - value: "./models/"
