@@ -5,7 +5,7 @@ metadata:
  namespace: default
  label:
    created-by: kubeless
-   function: scraper
+   function: keyphrase-extractor
 spec:
  runtime: python3.8
  timeout: "180"
@@ -13,6 +13,6 @@ spec:
  deps: ""
  # Checksum is included for security purposes and ensures our files are not tampered with.
  # The checksum can be calculated via: openssl dgst -sha256 ./package.zip
- checksum: 24f5593edf2de6ed85bac9fe24cd626a932c8609b6eb060d6de10c3dd484db19
+ checksum: 362bdc654d3b1e4057a82b2dcc3828a91d7f5f62072948464740066fe799dd5b
  function-content-type: url+zip
  function: https://github.com/Ask-Waldo/ask-waldo-keyphrase-extraction-serverless/blob/master/zip/package.zip?raw=true
