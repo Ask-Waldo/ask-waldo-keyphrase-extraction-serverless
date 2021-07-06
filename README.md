@@ -1,6 +1,7 @@
 # Extract keywords API
 
 _Note for Robin: https://www.magalix.com/blog/implementing-faas-in-kubernetes-using-kubeless_
+
 ## Install Kubeles locally
 
 ```bash
@@ -28,3 +29,14 @@ _Note: check if RBAC is used within the target cluster!_
 
 ## Deploy function to cluster
 
+- Zip the relevant files:
+
+```bash
+  zip -r9 ./zip/package.zip function.yaml handler.py requirements.txt
+```
+
+- Generate checsum and update in function.yaml
+
+```bash
+  openssl dgst -sha256 ./package.zip
+```

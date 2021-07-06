@@ -15,4 +15,7 @@ spec:
  # The checksum can be calculated via: openssl dgst -sha256 ./package.zip
  checksum: sha256:3e15980e5b45aafb13730f5af0b41fcad6ecef69c4e88aa9818eb52b6a8e11a7
  function-content-type: url+zip
- function: https://github.com/MagalixCorp/k8s-faas/blob/master/packagae.zip?raw=true
+ function: https://github.com/Ask-Waldo/ask-waldo-keyphrase-extraction-serverless/blob/master/zip/package.zip?raw=true
+ env:
+  - name: SENTENCE_TRANSFORMERS_HOME
+    value: "/tmp/"
