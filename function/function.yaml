@@ -13,7 +13,7 @@ spec:
  deps: "requirements.txt"
  # Checksum is included for security purposes and ensures our files are not tampered with.
  # The checksum can be calculated via: openssl dgst -sha256 ./package.zip
- checksum: sha256:0cfb6297e48c80ace6cf5c525ff17b6a3400ab7348966b32db448e522b1d9aac
+ checksum: sha256:91e447fc34333693c941d16c3215930d3921549fafe9eb26a6c719d16f4a8276
  function-content-type: url+zip
  function: https://github.com/Ask-Waldo/ask-waldo-keyphrase-extraction-serverless/blob/master/zip/package.zip?raw=true
  deployment:
