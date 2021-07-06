@@ -3,6 +3,17 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/function/.venv-keyphrase-extraction" />
+      <excludeFolder url="file://$MODULE_DIR$/function/dependencies/caffe2/python/onnx/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/function/dependencies/numpy/core/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/function/dependencies/numpy/random/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/function/dependencies/numpy/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/function/dependencies/torch/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/function/dependencies/torch/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/function/dependencies/urllib3/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/function/dependencies/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/function/dependencies/keybert-0.4.0-py3.8.egg-info" />
+      <excludeFolder url="file://$MODULE_DIR$/function/dependencies/sentence_transformers-2.0.0-py3.8.egg-info" />
+      <excludeFolder url="file://$MODULE_DIR$/function/models" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
