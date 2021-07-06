@@ -1,4 +1,4 @@
-from keybert import KeyBERT
+from dependencies.keybert import KeyBERT
 
 keybert = KeyBERT(model="average_word_embeddings_glove.6B.300d")
 
