@@ -32,7 +32,7 @@ _Note: check if RBAC is used within the target cluster!_
 - Zip the relevant files:
 
 ```bash
-  zip -r9 ../zip/package.zip function.yaml handler.py requirements.txt
+zip -r9 ../zip/package.zip handler.py ./models requirements.txt
 ```
 
 - Generate checsum and update in function.yaml
