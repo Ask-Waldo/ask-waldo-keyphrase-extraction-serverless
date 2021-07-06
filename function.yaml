@@ -1,0 +1,18 @@
+apiVersion: kubeless.io/v1beta1
+kind: Function
+metadata:
+ name: keyphrase-extractor
+ namespace: default
+ label:
+   created-by: kubeless
+   function: scraper
+spec:
+ runtime: python3.8
+ timeout: "180"
+ handler: handler.extract_keyphrases
+ deps: ""
+ # Checksum is included for security purposes and ensures our files are not tampered with.
+ # The checksum can be calculated via: openssl dgst -sha256 ./package.zip
+ checksum: sha256:3e15980e5b45aafb13730f5af0b41fcad6ecef69c4e88aa9818eb52b6a8e11a7
+ function-content-type: url+zip
+ function: https://github.com/MagalixCorp/k8s-faas/blob/master/packagae.zip?raw=true
