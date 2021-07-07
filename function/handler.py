@@ -1,9 +1,11 @@
+import os
+
 from keybert import KeyBERT
 from sentence_transformers import SentenceTransformer
 from pathlib import Path
 
 
-full_path = Path.cwd().joinpath("models/sentence-transformers_average_word_embeddings_glove.6B.300d")
+full_path = Path.cwd().joinpath(os.getenv("MODEL_PATH"))
 model = SentenceTransformer(str(full_path))
 keybert = KeyBERT(model)
 

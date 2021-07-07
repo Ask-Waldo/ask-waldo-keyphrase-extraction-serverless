@@ -1,1 +1,2 @@
 keybert~=0.4.0
+sentence_transformers
