@@ -10,7 +10,7 @@ spec:
  runtime: python3.8
  timeout: "180"
  handler: handler.extract_keyphrases
- deps: "requirements.txt"
+ deps: ""
  # Checksum is included for security purposes and ensures our files are not tampered with.
  # The checksum can be calculated via: openssl dgst -sha256 ./package.zip
  checksum: sha256:91e447fc34333693c941d16c3215930d3921549fafe9eb26a6c719d16f4a8276
@@ -24,5 +24,3 @@ spec:
           - env:
              - name: SENTENCE_TRANSFORMERS_HOME
                value: "./models"
-             - name: PYTHONPATH
-               value: "./dependencies"
