@@ -1,13 +1,8 @@
-import os
-
 from keybert import KeyBERT
-from sentence_transformers import SentenceTransformer
-from pathlib import Path
 
 
-full_path = Path.cwd().joinpath(os.getenv("MODEL_PATH"))
-model = SentenceTransformer(str(full_path))
-keybert = KeyBERT(model)
+
+keybert = KeyBERT("average_word_embeddings_glove.6B.300d")
 
 
 def extract_keyphrases(event, context):

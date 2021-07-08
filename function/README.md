@@ -32,11 +32,11 @@ _Note: check if RBAC is used within the target cluster!_
 - Zip the relevant files:
 
 ```bash
-zip -r -X ../../zip/package.zip . ../models && cd .. && zip -g ../zip/package.zip handler.py
+    zip -r ../../zip/package.zip . ../models && cd .. && zip -g ../zip/package.zip handler.py
 ```
 
 - Generate checsum and update in function.yaml
 
 ```bash
-  shasum -a 256 ../zip/package.zip
+  shasum -a 256 ./zip/package.zip
 ```

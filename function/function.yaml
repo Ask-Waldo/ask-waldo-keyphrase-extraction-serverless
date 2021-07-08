@@ -10,10 +10,10 @@ spec:
  runtime: python3.8
  timeout: "560"
  handler: handler.extract_keyphrases
- deps: ""
+ deps: "requirements.txt"
  # Checksum is included for security purposes and ensures our files are not tampered with.
  # The checksum can be calculated via: openssl dgst -sha256 ./package.zip
- checksum: sha256:5a2e95e4379e18ad138a432d7b59ac86e7f49b90c5726bf90f34cfa45d54614b
+ checksum: sha256:9c82a3ba718d368b31476b99f7bb77348d95c0c70cd1b6256d3dcc62421641b0
  function-content-type: url+zip
  function: https://github.com/Ask-Waldo/ask-waldo-keyphrase-extraction-serverless/blob/master/zip/package.zip?raw=true
  deployment:
@@ -23,6 +23,4 @@ spec:
           containers:
           - env:
              - name: SENTENCE_TRANSFORMERS_HOME
-               value: "./"
-             - name: MODEL_PATH
-               value: "./sentence-transformers_average_word_embeddings_glove.6B.300d"
+               value: "/tmp/"
